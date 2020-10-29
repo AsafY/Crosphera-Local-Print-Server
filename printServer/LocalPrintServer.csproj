@@ -104,10 +104,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="LICENSE" />
     <None Include="packages.config" />
     <None Include="printServer_TemporaryKey.pfx" />
-    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
