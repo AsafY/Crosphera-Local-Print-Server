@@ -19,13 +19,8 @@
             data: data,
             dataType: 'html'
         }).done(function (responseData) {
-            logger.log(responseData);
-            hideFullPageProgress();
-            gStatusBar.setStatusIndicator(statusBarIndicatorMode.Ok, 'printer');
+            console.log(responseData);
         }).fail(function (responseData) {
-            gStatusBar.setStatusIndicator(statusBarIndicatorMode.Error, 'printer');
-            hideFullPageProgress();
-            gStatusBar.showMessage('Silent printing error', statusBarMessageType.Error);
-            logger.log(responseData);
+           console.log(responseData);
         });
 ```
