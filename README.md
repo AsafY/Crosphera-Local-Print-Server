@@ -1,11 +1,14 @@
 # Crosphera-Local-Print-Server
 
-Enable direct printing from browser on windows machine 
+# Enable direct printing from browser on windows machine 
 
-http://127.0.0.1:17080/?op=ping --  test if print server is up
-http://127.0.0.1:17080/?op=list -- list availbale printers
+# test if print server is up
+# http://127.0.0.1:17080/?op=ping
+# list availbale printers
+# http://127.0.0.1:17080/?op=list
 
-How to print: 
+# How to print: 
+```javascript
   const printerName = "__PRINTER_NAME_";
   const data = "ANY HTML DATA TO PRINT";
 
@@ -25,3 +28,4 @@ How to print:
             gStatusBar.showMessage('Silent printing error', statusBarMessageType.Error);
             logger.log(responseData);
         });
+```
