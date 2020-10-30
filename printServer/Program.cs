@@ -33,7 +33,7 @@ namespace printServer
 
             var th = new Thread(() =>
             {
-                Program.SimpleListenerExample(new string[] { "http://+:17080/" }, Program._frm);
+                Program.Listen(new string[] { "http://+:17080/" }, Program._frm);
                 Application.Run();
             });
             th.SetApartmentState(ApartmentState.STA);
@@ -42,7 +42,7 @@ namespace printServer
             Application.Run(Program._frm);
         }
 
-        public static void SimpleListenerExample(string[] prefixes, Form1 frm)
+        public static void Listen(string[] prefixes, Form1 frm)
         {
             if (!HttpListener.IsSupported)
             {
