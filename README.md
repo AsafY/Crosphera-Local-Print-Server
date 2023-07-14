@@ -1,6 +1,8 @@
 # Crosphera-Local-Print-Server
 
 # Enable direct printing from browser on windows machine 
+# great for printing reciepts & shipping labels right from your javascript code.
+# prints any html.
 
 # you might need to add permissions to the default port:
 # netsh http add urlacl url=http://+:17080/ user="_DOMAIN\_USER"
